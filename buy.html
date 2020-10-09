@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="main-style.css">
+    <link rel="stylesheet" href="home-form-style.css">
+
+    <script src="nav-script.js" type="application/javascript"></script>
+    <script src="sellpage-script.js" type="application/javascript"></script>
+    <script src="b.js" type="application/javascript"></script>
+
+    <title>JDM Salon Motoryzacyjny</title>
+</head>
+<body>
+    <img src="img/jdm_logo.png" id="jdm_logo" onclick="homepage()">
+    <div id="menu">
+        <ul class="menuList">
+            <li class="menuItem" onclick="homepage()">Powrót do strony głównej</li>
+            <li class="menuItem" onclick="sellpage()">Powrót przeglądu modeli</li>
+        </ul>
+    </div>
+
+    <div id="panel">
+        <fieldset id="panelBorder">
+            <legend>Zakup auta</legend>
+            <form>
+                <label for="imie">Imie:</label><br>
+                <input type="text" id="imie" name="imie" class="daneosobowe" required><br>
+                <label for="nazwisko">Nazwisko:</label><br>
+                <input type="text" id="nazwisko" name="nazwisko" class="daneosobowe" required><br><br>
+
+                <span>Dane kontaktowe</span><br><br>
+                <label for="mail">Email:</label><br>
+                <input type="text" id="mail" name="mail" class="daneosobowe" required><br>
+                <label for="tel">Numer telefonu</label><br>
+                <input type="number" id="tel" name="tel" class="daneosobowe" max="999999999" required><br><br>
+                <br>
+                <label for="ver">Wersja wyposażenia</label><br>
+                <select id="ver" name="ver" class="daneosobowe" required>
+                    <option value="Zwykła">Zwykła</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Premium">Premium</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Wyślij" id="submit">
+            </form>
+        </fieldset>
+</body>
+</html>
